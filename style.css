@@ -61,21 +61,6 @@ p{
     box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
 }
 
-.sunny {
-    background: linear-gradient(180deg, #2980b9 0%, #6dd5fa 70%, #ffffff 100%);
-}
-.rainy {
-    background: linear-gradient(180deg, #4b5563 0%, #1f2937 100%);
-}
-
-.clearNight {
-    background: linear-gradient(180deg, #0f172a 0%, #1e1b4b 100%);
-}
-
-.sunset {
-    background: linear-gradient(180deg, #e11d48 0%, #f59e0b 100%);
-}
-
 .city-name{
     margin-top: 40px;
     font-weight: 800;
