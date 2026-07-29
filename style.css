@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: Google Sans, sans-serif;
+    font-weight: 900;
+    background-color: hwb(0 0% 100% / 0.09);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+body.rainy {
+    background-image: url('images/rainy_bg.jpg');
+}
+
+body.sunny {
+    background-image: url('images/sunny_bg.jpg');
+}
+
+body.stormy {
+    background-image: url('images/stormy_bg.jpg');
+}
+
+body.cloudy {
+    background-image: url('images/cloudy_bg.jpg');
+}
+
+body.snowy {
+    background-image: url('images/snowy_bg.jpg');
+}
+
+.title {
+    color: rgba(243, 243, 243, 0.699);
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.subtitle{
+    font-size: 20px;
+    color: gray;
+    
+}
+p{
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.hero-section {
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#cityInput {
+    margin-top: 15px;
+    border: none;
+    border-radius: 16px;
+    padding-left: 10px;
+    min-width: 300px;
+    height: 36px;
+    font-family: inherit;
+}
+
+.submit-button {
+    border: none;
+    border-radius: 3px;
+    background-color:hsla(177, 88%, 52%, 0.945);
+    color: white;
+    font-family: inherit;
+    height: 30px;
+    width: 8em;
+    margin-left: 20px;
+}
+
+.submit-button:hover{
+    background-color:hsla(177, 71%, 31%, 0.945);
+    cursor: pointer;
+}
+
+.weatherCard {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 50px;
+    min-width: 50vw;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #0f172a 0%, #1e1b4b 100%);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+}
+
+.sunny {
+    background: linear-gradient(180deg, #2980b9 0%, #6dd5fa 70%, #ffffff 100%);
+}
+.rainy {
+    background: linear-gradient(180deg, #4b5563 0%, #1f2937 100%);
+}
+.cloudy {
+    background: linear-gradient(180deg, #64748b 0%, #94a3b8 100%);
+}
+.snowy {
+    background: linear-gradient(180deg, #93c5fd 0%, #e0f2fe 100%);
+}
+.stormy {
+    background: linear-gradient(180deg, #1e293b 0%, #334155 100%);
+}
+
+.city-name{
+    margin-top: 40px;
+    font-weight: 800;
+    font-size: 40px;
+    color: white;
+}
+
+.city-temperature{
+    font-weight: 900;
+    font-size: 80px;
+    color: white;
+}
+
+.city-humidity{
+    color: white;
+}
+
+.weather-emoji{
+    font-size: 80px;
+}
+
+.errorMessage {
+    padding: 20px;
+    color: white;
+}
