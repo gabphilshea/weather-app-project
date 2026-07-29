@@ -54,7 +54,7 @@ p{
     align-items: center;
     padding: 20px;
     padding-bottom: 50px;
-    min-width: 100vh;
+    min-width: 100vw;
     border-radius: 16px;
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
