@@ -19,6 +19,9 @@ jobs:
           echo "const API_KEY = '${{ secrets.WEATHER_API_KEY }}';" > config.js
           echo "export default API_KEY;" >> config.js
 
+      - name: Remove gitignore so config.js isn't excluded from deploy
+        run: rm -f .gitignore
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
