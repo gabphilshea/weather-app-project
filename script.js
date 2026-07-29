@@ -43,10 +43,15 @@ function displayWeatherInfo(data){
 
     const { name: city, main: { temp, humidity }, weather: [{description, id}]} = data;
 
+    const condition = getConditionClass(id);
+
     card.textContent = "";
     card.style.display = "flex";
     card.className = "weatherCard";
     card.classList.add(getConditionClass(id));
+
+    document.body.className = "";
+    document.body.classList.add(condition);
 
     const cityDisplay = document.createElement("p");
     cityDisplay.textContent = city;
@@ -98,6 +103,8 @@ function getConditionClass(weatherId){
 }
 
 function displayError(message){
+    document.body.className = "";
+
     const errorMessage = document.createElement("p");
     errorMessage.textContent = message;
     errorMessage.classList.add("errorMessage");

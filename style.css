@@ -3,10 +3,34 @@ body {
     font-family: Google Sans, sans-serif;
     font-weight: 900;
     background-color: hwb(0 0% 100% / 0.09);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
     
+}
+
+body.rainy {
+    background-image: url('images/rainy_bg.jpg');
+}
+
+body.sunny {
+    background-image: url('images/sunny_bg.jpg');
+}
+
+body.stormy {
+    background-image: url('images/stormy_bg.jpg');
+}
+
+body.cloudy {
+    background-image: url('images/cloudy_bg.jpg');
+}
+
+body.snowy {
+    background-image: url('images/snowy_bg.jpg');
 }
 
 .title {
@@ -65,7 +89,7 @@ p{
     align-items: center;
     padding: 20px;
     padding-bottom: 50px;
-    min-width: 100vw;
+    min-width: 50vw;
     border-radius: 16px;
     background: linear-gradient(180deg, #0f172a 0%, #1e1b4b 100%);
     backdrop-filter: blur(5.5px);
@@ -111,5 +135,6 @@ p{
 }
 
 .errorMessage {
+    padding: 20px;
     color: white;
 }
