@@ -3,18 +3,28 @@ body {
     font-family: Google Sans, sans-serif;
     font-weight: 900;
     background-color: hwb(0 0% 100% / 0.09);
-    /*background-image: url('images/rainy_bg.jpg');*/
-    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
     
 }
 
+.title {
+    color: rgba(243, 243, 243, 0.699);
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.subtitle{
+    font-size: 20px;
+    color: gray;
+    
+}
 p{
     margin: 0;
     font-size: 1.5rem;
 }
+
 .hero-section {
     background-color: black;
     width: 100%;
@@ -23,6 +33,7 @@ p{
 }
 
 #cityInput {
+    margin-top: 15px;
     border: none;
     border-radius: 16px;
     padding-left: 10px;
@@ -56,9 +67,26 @@ p{
     padding-bottom: 50px;
     min-width: 100vw;
     border-radius: 16px;
+    background: linear-gradient(180deg, #0f172a 0%, #1e1b4b 100%);
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
     box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+}
+
+.sunny {
+    background: linear-gradient(180deg, #2980b9 0%, #6dd5fa 70%, #ffffff 100%);
+}
+.rainy {
+    background: linear-gradient(180deg, #4b5563 0%, #1f2937 100%);
+}
+.cloudy {
+    background: linear-gradient(180deg, #64748b 0%, #94a3b8 100%);
+}
+.snowy {
+    background: linear-gradient(180deg, #93c5fd 0%, #e0f2fe 100%);
+}
+.stormy {
+    background: linear-gradient(180deg, #1e293b 0%, #334155 100%);
 }
 
 .city-name{
