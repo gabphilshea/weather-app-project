@@ -1,6 +1,5 @@
 # WeatherKnower Practice Weather Web App Project
-### A responsive weather web app built with HTML, CSS, and JavaScript operating on data from OpenWeatherMap's (https://openweathermap.org/) API. Know real-time weather forecasts on
-any place in the world available on OpenWeatherMap's database. Inspired from Bro Code.
+### A responsive weather web app built with HTML, CSS, and JavaScript operating on data from OpenWeatherMap's (https://openweathermap.org/) API. Know real-time weather forecasts on any place in the world available on OpenWeatherMap's database. Inspired from Bro Code.
 
 ### Parameters displayed:
 - Current temperature (in Celsius) of the place
